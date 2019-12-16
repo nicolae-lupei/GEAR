@@ -1,9 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Attribute groups";
+    ViewData["Title"] = Localizer["system_commerce_attribute_group"];
     var conf = new ListTagHelperModel
     {
-        Title = "Categories",
-        SubTitle = "List of group attributes",
+        Title = Localizer["system_commerce_attribute_group"],
+        SubTitle = Localizer["list_group_attributes"],
         ListIdentifier = "attribute_groups",
         Api = new ListApiConfigurationViewModel
         {
@@ -23,8 +23,8 @@
             {
                 AspAction = "Create",
                 AspController = "AttributeGroup",
-                ButtonName = "Add new group",
-                Description = "New group category will be added"
+                ButtonName = Localizer["add_group"],
+                Description = Localizer["group_add_info"]
             }
         },
         HasActions = true,
@@ -54,7 +54,7 @@
                 ButtonType = BootstrapButton.Danger
             },
         },
-        Documentation = "This tag allow to manage your attribute group"
+        //Documentation = "This tag allow to manage your attribute group"
     };
 }
 

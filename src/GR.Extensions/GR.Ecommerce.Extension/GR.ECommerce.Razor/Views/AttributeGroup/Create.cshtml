@@ -1,10 +1,15 @@
 ﻿@model GR.ECommerce.Abstractions.Models.AttributeGroup
 
+
+@{
+    ViewData["Title"] = Localizer["add_attribute_group"];
+}
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-header">
-                <h4 class="m-b-0 text-white">Add attribute group</h4>
+                <h4 class="m-b-0 text-white">Localizer["add_attribute_group"]</h4>
             </div>
             <div class="card-body">
                 <form asp-action="Create" role="form">
@@ -13,7 +18,7 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
                                     <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>

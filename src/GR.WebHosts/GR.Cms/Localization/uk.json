@@ -867,5 +867,8 @@
   "new_category_added": "Нова категорія продукту будуть додані",
   "display_order": "Порядок Відображення ",
   "edit_category": "Редагувати категорію ",
-  "create_category": "Створити Категорію"
+  "create_category": "Створити Категорію",
+  "list_group_attributes": "Список груп атрибутів",
+  "edit_attribute_group": "Редагування групи атрибутів ",
+  "add_attribute_group": "Додати групу атрибутів "
 }

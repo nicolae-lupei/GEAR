@@ -867,5 +867,8 @@
   "new_category_added": "Nieuwe product categorie toegevoegd",
   "display_order": "Weergavevolgorde",
   "edit_category": "Wijzig kategorie",
-  "create_category": "Categorie aanmaken"
+  "create_category": "Categorie aanmaken",
+  "list_group_attributes": "Lijst van groep kenmerken",
+  "edit_attribute_group": "Edit attribute groep",
+  "add_attribute_group": "Kenmerk toevoegen groep"
 }

@@ -867,5 +867,8 @@
   "new_category_added": "新产品类别将加入",
   "display_order": "显示了",
   "edit_category": "编辑类别",
-  "create_category": "创建类别"
+  "create_category": "创建类别",
+  "list_group_attributes": "列表团属性",
+  "edit_attribute_group": "编辑属性的小组",
+  "add_attribute_group": "添加的属性组"
 }

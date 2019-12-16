@@ -867,5 +867,8 @@
   "new_category_added": "New product category will be added",
   "display_order": "Display Order",
   "edit_category": "Edit category",
-  "create_category": "Create category"
+  "create_category": "Create category",
+  "list_group_attributes": "List of group attributes",
+  "edit_attribute_group": "Edit attribute group",
+  "add_attribute_group": "Add attribute group"
 }

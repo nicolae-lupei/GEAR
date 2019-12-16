@@ -867,5 +867,8 @@
   "new_category_added": "Neue Produkt-Kategorie Hinzugefügt werden",
   "display_order": "Reihenfolge Der Anzeige",
   "edit_category": "Kategorie Bearbeiten",
-  "create_category": "Kategorie erstellen"
+  "create_category": "Kategorie erstellen",
+  "list_group_attributes": "Liste der Gruppe Attribute",
+  "edit_attribute_group": "Bearbeiten Attribut-Gruppe",
+  "add_attribute_group": "Hinzufügen von Attribut-Gruppe"
 }

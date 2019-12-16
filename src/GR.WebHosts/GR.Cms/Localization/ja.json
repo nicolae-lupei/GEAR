@@ -867,5 +867,8 @@
   "new_category_added": "新製品カテゴリを追加する",
   "display_order": "表示順",
   "edit_category": "編集カテゴリ",
-  "create_category": "作成カテゴリ"
+  "create_category": "作成カテゴリ",
+  "list_group_attributes": "リストのグループ属性",
+  "edit_attribute_group": "編集グループ属性",
+  "add_attribute_group": "追加の属性グループ"
 }

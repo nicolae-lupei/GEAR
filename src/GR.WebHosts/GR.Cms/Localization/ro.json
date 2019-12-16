@@ -867,5 +867,8 @@
   "new_category_added": "Noua categorie de produse vor fi adăugate",
   "display_order": "Ordinea de Afișare",
   "edit_category": "Editare categorie",
-  "create_category": "Creați categorie"
+  "create_category": "Creați categorie",
+  "list_group_attributes": "Lista de grupuri pentru atribute",
+  "edit_attribute_group": "Editare atribut grup",
+  "add_attribute_group": "Adăugați atribut grup"
 }
