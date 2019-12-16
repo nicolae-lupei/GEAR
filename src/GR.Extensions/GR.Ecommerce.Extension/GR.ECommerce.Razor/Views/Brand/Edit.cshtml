@@ -1,5 +1,9 @@
 ﻿@model GR.ECommerce.Abstractions.Models.Brand
 
+@{
+    ViewData["Title"] = Localizer["edit_brand"];
+}
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
@@ -21,15 +25,15 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
-                                    <input asp-for="Name" class="form-control"/>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
+                                    <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="DisplayName"></label>
-                                    <input asp-for="DisplayName" class="form-control"/>
+                                    <JTranslateLabel asp-for="DisplayName"></JTranslateLabel>
+                                    <input asp-for="DisplayName" class="form-control" />
                                     <span asp-validation-for="DisplayName" class="text-danger"></span>
                                 </div>
                             </div>

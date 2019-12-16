@@ -11,9 +11,9 @@
         RenderColumns = new List<ListRenderColumn>
         {
             new ListRenderColumn(Localizer["name"], "name"),
-            new ListRenderColumn("Display Name", "displayName"),
-            new ListRenderColumn("Parent Category", "categoryParentName"),
-            new ListRenderColumn("Is Published", "isPublished"),
+            new ListRenderColumn(Localizer["display_name"], "displayName"),
+            new ListRenderColumn(Localizer["iso_active_parent_category"], "categoryParentName"),
+            new ListRenderColumn(Localizer["system_is_published"], "isPublished"),
             new ListRenderColumn(Localizer["created"], "created"),
             new ListRenderColumn(Localizer["changed"], "changed"),
             new ListRenderColumn(Localizer["author"], "author"),
@@ -25,8 +25,8 @@
             {
                 AspAction = "Create",
                 AspController = "ProductCategory",
-                ButtonName = "Add new category",
-                Description = "New product category will be added"
+                ButtonName = Localizer["add_category"],
+                Description = Localizer["new_category_added"]
             }
         },
         HasActions = true,
@@ -56,7 +56,7 @@
                 ButtonType = BootstrapButton.Danger
             },
         },
-        Documentation = "This tan allow to manage your product categories"
+        //Documentation = "This tan allow to manage your product categories"
     };
 }
 

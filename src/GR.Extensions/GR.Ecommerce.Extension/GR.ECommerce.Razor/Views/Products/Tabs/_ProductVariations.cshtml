@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Mvc.Localization
 @model GR.ECommerce.Abstractions.ViewModels.ProductViewModels.ProductViewModel
 
 <div class="row">
@@ -5,7 +6,7 @@
 
 
 		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-			Add variation
+			@Localizer["add_variation"]
 		</button>
 
 		<div class="card card-outline-info mt-2">
@@ -34,7 +35,7 @@
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalCenterTitle">Add Variation</h5>
+				<h5 class="modal-title" id="exampleModalCenterTitle">@Localizer["add_variation"]</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clearForm()">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -51,7 +52,7 @@
 							<div class="row p-t-20">
 								<div class="col-md-6">
 									<div class="input-group mb-3">
-										<label class="col-md-12">Select Option</label>
+										<label class="col-md-12">@Localizer["select_option"]</label>
 										<select id="ProductOptionId" class="form-control" aria-describedby="addOptionBtn">
 											<option value="">Select</option>
 
@@ -62,7 +63,7 @@
 
 										</select>
 										<div class="input-group-append">
-											<a id="addOptionBtn" href="#" class="btn btn-secondary">Add</a>
+											<a id="addOptionBtn" href="#" class="btn btn-secondary">@Localizer["add"]</a>
 										</div>
 									</div>
 								</div>
@@ -71,9 +72,9 @@
 								<table class="table">
 									<thead>
 									<tr>
-										<th scope="col">Option</th>
-										<th scope="col">Value</th>
-										<th scope="col">Actions</th>
+										<th scope="col">@Localizer["option"]</th>
+										<th scope="col">@Localizer["iso_active_value"]</th>
+										<th scope="col">@Localizer["list_actions"]</th>
 									</tr>
 									</thead>
 									<tbody id="appendTableOption">
@@ -81,7 +82,7 @@
 								</table>
 							</div>
 							<div class="row mb-2 col-12 ">
-								<div class="col-4"><label class="col-md-12">Price variation</label></div>
+								<div class="col-4"><label class="col-md-12">@Localizer["price"]</label></div>
 								<div class="col-4">
 									<input type='text' id="PriceVariation" class='form-control' value=''/>
 								</div>
@@ -92,7 +93,7 @@
 									@*<button type="button" class="btn btn-primary" id="saveOptionBtn">@Localizer["save"]</button>*@
 								</div>
 								<div class="col-lg-2 col-md-3">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="clearForm()">Close</button>
+									<button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="clearForm()">@Localizer["system_close"]</button>
 								</div>
 							</div>
 						</form>
@@ -226,12 +227,12 @@
 			$("#ListVariationProduct").append(
 				`<div class="col-lg-5 col-md-5 row border m-2 p-2" id="${element.variationId}" >
 					<div class="col-12">
-						Product Variation
+						@Localizer["product_variations"]
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="removeVariation('${element.variationId}')">
 							<span aria-hidden="true">&times;</span>
 						</button>
 						<button type="button" class="edit" data-toggle="modal" data-target="#exampleModalCenter" onclick="getVariationById('${element.variationId}')">
-							edit
+							@Localizer["edit"]
 						</button>
 					</div>
 					<table class="table  table-border m-2">	
@@ -239,7 +240,7 @@
 							${a}
 						</tr>
 					</table>
-					Price:  ${element.price}
+					@Localizer["price"]:  ${element.price}
 				</div>`);
 		});
 	}

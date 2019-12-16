@@ -1,15 +1,21 @@
 ﻿@model GR.ECommerce.Abstractions.ViewModels.ProductViewModels.ProductViewModel
 
+
+@{
+    ViewData["Title"] = Localizer["create_product"];
+}
+
 @section Styles
 {
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+    
 }
 
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-header">
-                <h4 class="m-b-0 text-white">General Information</h4>
+                <h4 class="m-b-0 text-white">@Localizer["general_information"]</h4>
             </div>
             <div class="card-body">
                 <form asp-action="Create" role="form" enctype="multipart/form-data">
@@ -18,42 +24,42 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
                                     <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="DisplayName"></label>
+                                    <JTranslateLabel asp-for="DisplayName"></JTranslateLabel>
                                     <input asp-for="DisplayName" class="form-control" />
                                     <span asp-validation-for="DisplayName" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="ShortDescription"></label>
+                                    <JTranslateLabel asp-for="ShortDescription"></JTranslateLabel>
                                     <textarea asp-for="ShortDescription" class="form-control ckeditor"></textarea>
                                     <span asp-validation-for="ShortDescription" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Description"></label>
+                                    <JTranslateLabel asp-for="Description"></JTranslateLabel>
                                     <textarea asp-for="Description" class="form-control ckeditor"></textarea>
                                     <span asp-validation-for="Description" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Specification"></label>
+                                    <JTranslateLabel asp-for="Specification"></JTranslateLabel>
                                     <textarea asp-for="Specification" class="form-control ckeditor"></textarea>
                                     <span asp-validation-for="Specification" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Brand"></label>
+                                    <JTranslateLabel asp-for="Brand"></JTranslateLabel>
                                     <select asp-for="BrandId" asp-items="Model.Brands" class="form-control">
                                         <option value=""></option>
                                     </select>
@@ -61,7 +67,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="ProductTypeList"></label>
+                                    <JTranslateLabel asp-for="ProductTypeList"></JTranslateLabel>
                                     <select asp-for="ProductTypeId" asp-items="Model.ProductTypeList" class="form-control">
                                         <option value=""></option>
                                     </select>
@@ -92,7 +98,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="ProductImagesList"></label>
+                                    <JTranslateLabel asp-for="ProductImagesList"></JTranslateLabel>
                                     <input type="file" asp-for="ProductImagesList" asp-items="Model.Brands" class="dropify" data-allowed-file-extensions="png jpg jpeg" multiple />
                                 </div>
                             </div>

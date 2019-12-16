@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using GR.Core;
+using GR.Core.Attributes;
 
 namespace GR.ECommerce.Abstractions.Models
 {
@@ -11,18 +12,21 @@ namespace GR.ECommerce.Abstractions.Models
         /// Category name
         /// </summary>
         [Required]
+        [DisplayTranslate(Key = "name")]
         public virtual string Name { get; set; }
 
         /// <summary>
         /// Display name
         /// </summary>
         [Required]
+        [DisplayTranslate(Key = "display_name")]
         public virtual string DisplayName { get; set; }
 
         /// <summary>
         /// Category Description
         /// </summary>
         [Required]
+        [DisplayTranslate(Key = "description")]
         public virtual string Description { get; set; }
 
         /// <summary>
@@ -44,7 +48,8 @@ namespace GR.ECommerce.Abstractions.Models
         /// <summary>
         /// Category Is Published
         /// </summary>
-        [Required]
+        [Required] 
+        [DisplayTranslate(Key = "system_is_published")]
         public virtual bool IsPublished { get; set; }
 
         /// <summary>

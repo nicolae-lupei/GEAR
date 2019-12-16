@@ -10,7 +10,7 @@
                         <div class="row p-t-20">
                             <div class="col-md-6">
                                 <div class="input-group mb-3">
-                                    <label asp-for="ProductAttributeId" class="col-md-12"></label>
+                                    <JTranslateLabel asp-for="ProductAttributeId"></JTranslateLabel>
                                     <select asp-for="ProductAttributeId" class="form-control" aria-describedby="addAttributeBtn">
                                         <option value=""></option>
                                         @foreach (var item in @Model.ProductAttributesList)
@@ -24,7 +24,7 @@
                                         }
                                     </select>
                                     <div class="input-group-append">
-                                        <a id="addAttributeBtn" href="#" class="btn btn-secondary">Add</a>
+                                        <a id="addAttributeBtn" href="#" class="btn btn-secondary">@Localizer["add"]</a>
                                     </div>
                                 </div>
                             </div>
@@ -33,11 +33,11 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Attribute</th>
-                                        <th scope="col">Value</th>
-                                        <th scope="col">Is Published</th>
-                                        <th scope="col">Is Available</th>
-                                        <th scope="col">Actions</th>
+                                        <th scope="col">@Localizer["attribute"]</th>
+                                        <th scope="col">@Localizer["iso_active_value"]</th>
+                                        <th scope="col">@Localizer["system_is_published"]</th>
+                                        <th scope="col">@Localizer["is_available"]</th>
+                                        <th scope="col">@Localizer["list_actions"]</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tableBody"></tbody>

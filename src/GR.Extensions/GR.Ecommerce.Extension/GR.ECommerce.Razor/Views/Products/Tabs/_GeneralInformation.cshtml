@@ -24,14 +24,14 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="DisplayName"></label>
+                                        <JTranslateLabel asp-for="DisplayName"></JTranslateLabel>
                                         <input asp-for="DisplayName" class="form-control" />
                                         <span asp-validation-for="DisplayName" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="ShortDescription"></label>
+                                        <JTranslateLabel asp-for="ShortDescription"></JTranslateLabel>
                                         <textarea asp-for="ShortDescription" class="form-control ckeditor"></textarea>
                                         <span asp-validation-for="ShortDescription" class="text-danger"></span>
                                     </div>
@@ -45,14 +45,14 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="Specification"></label>
+                                        <JTranslateLabel asp-for="Specification"></JTranslateLabel>
                                         <textarea asp-for="Specification" class="form-control ckeditor"></textarea>
                                         <span asp-validation-for="Specification" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="Brand"></label>
+                                        <JTranslateLabel asp-for="Brand"></JTranslateLabel>
                                         <select asp-for="BrandId" asp-items="Model.Brands" class="form-control">
                                             <option value=""></option>
                                         </select>
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="ProductTypeList"></label>
+                                        <JTranslateLabel asp-for="ProductTypeList"></JTranslateLabel>
                                         <select asp-for="ProductTypeId" asp-items="Model.ProductTypeList" class="form-control">
                                             <option value=""></option>
                                         </select>
@@ -84,14 +84,14 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="Price"></label>
+                                        <JTranslateLabel asp-for="Price"></JTranslateLabel>
                                         <input asp-for="Price" class="form-control" />
                                         <span asp-validation-for="Price" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label asp-for="ProductImagesList"></label>
+                                        <JTranslateLabel asp-for="ProductImagesList"></JTranslateLabel>
                                         <input type="file" asp-for="ProductImagesList" asp-items="Model.Brands" class="dropify" data-allowed-file-extensions="png jpg jpeg" />
                                     </div>
                                 </div>

@@ -22,8 +22,8 @@
             {
                 AspAction = "Create",
                 AspController = "Products",
-                ButtonName = "Add new product",
-                Description = "New product will be added"
+                ButtonName = Localizer["add_product"],
+                Description = Localizer["new_product_added"]
             }
         },
         HasActions = true,
@@ -52,19 +52,19 @@
                 },
                 ButtonType = BootstrapButton.Danger
             },
-            new ListActionViewModel
-            {
-                HasIcon = false,
-                Name = "Details",
-                Url = Url.Action("ProductDetail", "Products"),
-                ButtonType = BootstrapButton.Info,
-                ActionParameters = new List<ActionParameter>
-                {
-                    new ActionParameter("productId", "id")
-                }
-            },
+           // new ListActionViewModel
+            //{
+            //    HasIcon = false,
+            //    Name = "Details",
+            //    Url = Url.Action("ProductDetail", "Products"),
+            //    ButtonType = BootstrapButton.Info,
+            //    ActionParameters = new List<ActionParameter>
+            //    {
+            //        new ActionParameter("productId", "id")
+            //    }
+            //},
         },
-        Documentation = "This tan allow to manage your products"
+        // Documentation = "This tan allow to manage your products"
     };
 }
 

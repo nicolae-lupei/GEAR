@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using GR.Core.Attributes;
 using GR.ECommerce.Abstractions.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -17,13 +18,13 @@ namespace GR.ECommerce.Abstractions.ViewModels.ProductViewModels
         /// <summary>
         /// Display name
         /// </summary>
-        [Display(Name = "Display Name")]
+        [DisplayTranslate(Key = "display_name")]
         public override string DisplayName { get; set; }
 
         /// <summary>
         /// Short description
         /// </summary>
-        [Display(Name = "Short Description")]
+        [DisplayTranslate(Key = "short_description")]
         public override string ShortDescription { get; set; }
 
         /// <summary>
@@ -31,7 +32,7 @@ namespace GR.ECommerce.Abstractions.ViewModels.ProductViewModels
         /// </summary>
         public Dictionary<string, IEnumerable<SelectListItem>> ProductAttributesList { get; set; } = new Dictionary<string, IEnumerable<SelectListItem>>();
 
-        [Display(Name = "Available Attributes")]
+        [DisplayTranslate(Key = "available_attributes")]
         public int ProductAttributeId { get; set; }
 
         /// <summary>
@@ -45,18 +46,19 @@ namespace GR.ECommerce.Abstractions.ViewModels.ProductViewModels
         /// <summary>
         /// Images
         /// </summary>
-        [Display(Name = "Product Image")]
+        [DisplayTranslate(Key = "product_image")]
         public List<IFormFile> ProductImagesList { get; set; } = new List<IFormFile>();
 
         /// <summary>
         /// Product types
         /// </summary>
-        [Display(Name = "Type")]
+        [DisplayTranslate(Key = "type")]
         public List<SelectListItem> ProductTypeList { get; set; } = new List<SelectListItem>();
 
         /// <summary>
         /// Last price
         /// </summary>
+         [DisplayTranslate(Key = "price")]
         public virtual decimal Price { get; set; }
     }
 

@@ -1,5 +1,10 @@
 ﻿@model GR.ECommerce.Abstractions.ViewModels.ProductViewModels.ProductCategoryViewModel
 
+
+@{
+    ViewData["Title"] = Localizer["create_category"];
+}
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
@@ -13,35 +18,35 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
                                     <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="DisplayName"></label>
+                                    <JTranslateLabel asp-for="DisplayName"></JTranslateLabel>
                                     <input asp-for="DisplayName" class="form-control" />
                                     <span asp-validation-for="DisplayName"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Description"></label>
+                                    <JTranslateLabel asp-for="Description"></JTranslateLabel>
                                     <input asp-for="Description" class="form-control" />
                                     <span asp-validation-for="Description"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="DisplayOrder"></label>
+                                    <JTranslateLabel asp-for="DisplayOrder"></JTranslateLabel>
                                     <input asp-for="DisplayOrder" class="form-control" />
                                     <span asp-validation-for="DisplayOrder"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="ParentCategoryId"></label>
+                                    <JTranslateLabel asp-for="ParentCategoryId"></JTranslateLabel>
                                     <select asp-for="ParentCategoryId" asp-items="Model.ParentCategoryList" class="form-control">
                                         <option value=""></option>
                                     </select>
@@ -49,8 +54,8 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input asp-for="IsPublished"  type="checkbox" />
-                                    <label class="form-check-label" asp-for="IsPublished"></label>
+                                    <input asp-for="IsPublished" type="checkbox" />
+                                    <JTranslateLabel asp-for="IsPublished"></JTranslateLabel>
                                     <span asp-validation-for="IsPublished"></span>
                                 </div>
                             </div>

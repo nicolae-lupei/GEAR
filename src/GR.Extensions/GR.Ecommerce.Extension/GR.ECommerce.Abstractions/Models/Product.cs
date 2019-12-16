@@ -32,10 +32,12 @@ namespace GR.ECommerce.Abstractions.Models
         /// <summary>
         /// Product Specification
         /// </summary>
+        [DisplayTranslate(Key = "specification")] 
         public string Specification { get; set; }
         /// <summary>
         /// Reference to brand
         /// </summary>
+        [DisplayTranslate(Key = "brand")]
         public virtual Brand Brand { get; set; }
         public virtual Guid BrandId { get; set; }
 
