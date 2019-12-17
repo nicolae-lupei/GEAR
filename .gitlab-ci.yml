@@ -8,10 +8,12 @@ cache:
     - src/GR.WebHosts/GR.Cms/wwwroot/lib/
 test_projects:
   stage: test
+  only:
+    - develop
   script:
-    - dotnet test ./src/GR.Tests/GR.Core.Tests/GR.Core.Tests.csproj
+    - dotnet clean
     - echo "Code quality tests started"
-    - dotnet sonarscanner begin /k:"ISO"
+    - dotnet sonarscanner begin /k:"ISODMS"
     - dotnet build /nodereuse:false
     - dotnet sonarscanner end 
     - dotnet build-server shutdown
