@@ -870,5 +870,22 @@
   "create_category": "Tworzenie Kategorii",
   "list_group_attributes": "Lista grup atrybutów",
   "edit_attribute_group": "Edycja grupy atrybutów ",
-  "add_attribute_group": "Dodaj grupę atrybutów "
+  "add_attribute_group": "Dodaj grupę atrybutów ",
+  "attribute_group_name": "Atrybut nazwa grupy ",
+  "list_product_attributes": "Lista atrybutów produktu ",
+  "add_product_attribute": "Dodaj nowy atrybut towaru ",
+  "new_attribute_added": "Nowy atrybut zostanie dodany",
+  "edit_product_attribute": "Edycja atrybutów towaru ",
+  "create_product_attribute": "Tworzenie atrybutów towaru ",
+  "add_new_type": "Dodaj nowy typ",
+  "new_type_added": "Nowy typ zostanie dodany",
+  "edit_product_types": "Edycja produktów ",
+  "add_product_type": "Dodaj typ produktu ",
+  "product_option": "Parametr Produktu ",
+  "add_new_product_option": "Dodaj nowy parametr produktu ",
+  "new_option_added": "Nowa opcja zostanie dodana",
+  "edit_option": "Opcja edycji ",
+  "add_attribute": "Dodaj atrybut",
+  "list_product_option": "Lista opcji produktu ",
+  "system_document_category": "Kategoria dokumentu "
 }

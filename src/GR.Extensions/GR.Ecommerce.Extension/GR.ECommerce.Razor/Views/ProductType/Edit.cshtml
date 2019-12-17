@@ -1,10 +1,14 @@
 ﻿@model GR.ECommerce.Abstractions.Models.ProductType
 
+@{
+    ViewData["Title"] = Localizer["edit_product_types"];
+}
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-header">
-                <h4 class="m-b-0 text-white">Edit product types</h4>
+                <h4 class="m-b-0 text-white">@Localizer["edit_product_types"]</h4>
             </div>
             <div class="card-body">
                 <form asp-action="Edit" role="form">
@@ -21,14 +25,14 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
                                     <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="DisplayName"></label>
+                                    <JTranslateLabel asp-for="DisplayName"></JTranslateLabel>
                                     <input asp-for="DisplayName" class="form-control" />
                                     <span asp-validation-for="DisplayName"></span>
                                 </div>

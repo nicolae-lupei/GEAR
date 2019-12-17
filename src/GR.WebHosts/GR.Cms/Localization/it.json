@@ -870,5 +870,22 @@
   "create_category": "Creare una categoria",
   "list_group_attributes": "Elenco di attributi del gruppo di",
   "edit_attribute_group": "Modificare l'attributo di gruppo",
-  "add_attribute_group": "Aggiungere l'attributo di gruppo"
+  "add_attribute_group": "Aggiungere l'attributo di gruppo",
+  "attribute_group_name": "Attributo nome del gruppo",
+  "list_product_attributes": "Elenco degli Attributi di un Prodotto",
+  "add_product_attribute": "Aggiungere un nuovo attributo prodotto",
+  "new_attribute_added": "Nuovo attributo verrà aggiunto",
+  "edit_product_attribute": "Modifica degli attributi dei prodotti",
+  "create_product_attribute": "Creare prodotto attributo",
+  "add_new_type": "Aggiungi un nuovo tipo di",
+  "new_type_added": "Nuovo tipo di essere aggiunto",
+  "edit_product_types": "Modifica tipi di prodotto",
+  "add_product_type": "Aggiungi tipo di prodotto",
+  "product_option": "Opzioni Del Prodotto",
+  "add_new_product_option": "Aggiungere nuove opzioni del prodotto",
+  "new_option_added": "Nuova opzione sarà aggiunto",
+  "edit_option": "Opzione modifica",
+  "add_attribute": "Aggiungere l'attributo",
+  "list_product_option": "Elenco delle opzioni del Prodotto",
+  "system_document_category": "Categoria del documento"
 }

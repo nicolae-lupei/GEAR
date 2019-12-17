@@ -1,10 +1,16 @@
 ﻿@model GR.ECommerce.Abstractions.ViewModels.ProductViewModels.ProductOptionViewModel
 
+
+@{
+    ViewData["Title"] = Localizer["edit_option"];
+}
+
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-header">
-                <h4 class="m-b-0 text-white">Edit brand</h4>
+                <h4 class="m-b-0 text-white">@Localizer["edit_option"]</h4>
             </div>
             <div class="card-body">
                 <form asp-action="Edit" role="form">
@@ -21,14 +27,14 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
                                     <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="IsPublish"></label>
+                                    <JTranslateLabel asp-for="IsPublish"></JTranslateLabel>
                                     <input asp-for="IsPublish" class="checkbox " />
                                     <span asp-validation-for="IsPublish"></span>
                                 </div>

@@ -870,5 +870,22 @@
   "create_category": "Categorie aanmaken",
   "list_group_attributes": "Lijst van groep kenmerken",
   "edit_attribute_group": "Edit attribute groep",
-  "add_attribute_group": "Kenmerk toevoegen groep"
+  "add_attribute_group": "Kenmerk toevoegen groep",
+  "attribute_group_name": "Attribuut naam groep",
+  "list_product_attributes": "Lijst van Product Kenmerken",
+  "add_product_attribute": "Nieuw product toevoegen kenmerk",
+  "new_attribute_added": "Nieuwe kenmerk wordt toegevoegd",
+  "edit_product_attribute": "Bewerken kenmerk product",
+  "create_product_attribute": "Maak kenmerk product",
+  "add_new_type": "Het toevoegen van nieuwe type",
+  "new_type_added": "Nieuw type toegevoegd",
+  "edit_product_types": "Wijzig product types",
+  "add_product_type": "Voeg het product type",
+  "product_option": "Product Optie",
+  "add_new_product_option": "Nieuw product toevoegen optie",
+  "new_option_added": "De nieuwe optie wordt toegevoegd",
+  "edit_option": "Optie bewerken",
+  "add_attribute": "Kenmerk toevoegen",
+  "list_product_option": "Lijst van de Product Optie",
+  "system_document_category": "Document categorie"
 }

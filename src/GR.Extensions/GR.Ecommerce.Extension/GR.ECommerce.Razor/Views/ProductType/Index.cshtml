@@ -11,7 +11,7 @@
         RenderColumns = new List<ListRenderColumn>
         {
             new ListRenderColumn(Localizer["name"], "name"),
-            new ListRenderColumn("Display Name", "displayName"),
+            new ListRenderColumn(Localizer["display_name"], "displayName"),
             new ListRenderColumn(Localizer["created"], "created"),
             new ListRenderColumn(Localizer["changed"], "changed"),
             new ListRenderColumn(Localizer["author"], "author"),
@@ -23,8 +23,8 @@
             {
                 AspAction = "Create",
                 AspController = "ProductType",
-                ButtonName = "Add new type",
-                Description = "New type will be added"
+                ButtonName = Localizer["add_new_type"],
+                Description = Localizer["new_type_added"]
             }
         },
         HasActions = true,
@@ -54,7 +54,7 @@
                 ButtonType = BootstrapButton.Danger
             },
         },
-        Documentation = "This tab allow to manage your product types"
+       // Documentation = "This tab allow to manage your product types"
     };
 }
 

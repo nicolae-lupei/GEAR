@@ -1,8 +1,11 @@
 ﻿@{
+
+    ViewData["Title"] = Localizer["product_option"];
+
     var conf = new ListTagHelperModel
     {
-        Title = "Product Option",
-        SubTitle = "List of Product Option",
+        Title = Localizer["product_option"],
+        SubTitle = Localizer["list_product_option"],
         ListIdentifier = "product_option",
         Api = new ListApiConfigurationViewModel
         {
@@ -11,7 +14,7 @@
         RenderColumns = new List<ListRenderColumn>
 {
             new ListRenderColumn(Localizer["name"], "name"),
-            new ListRenderColumn("Is publish", "isPublish"),
+            new ListRenderColumn(Localizer["system_is_published"], "isPublish"),
             new ListRenderColumn(Localizer["created"], "created"),
             new ListRenderColumn(Localizer["changed"], "changed"),
             new ListRenderColumn(Localizer["author"], "author"),
@@ -23,8 +26,8 @@
             {
                 AspAction = "Create",
                 AspController = "ProductOption",
-                ButtonName = "Add new product option",
-                Description = "New option will be added"
+                ButtonName = Localizer["add_new_product_option"],
+                Description = Localizer["new_option_added"]
             }
         },
         HasActions = true,
@@ -54,7 +57,7 @@
                 ButtonType = BootstrapButton.Danger
             },
         },
-        Documentation = "This tab allow to manage your product option"
+       // Documentation = "This tab allow to manage your product option"
     };
 
 }

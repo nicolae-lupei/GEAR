@@ -1,10 +1,17 @@
 ﻿@model GR.ECommerce.Abstractions.ViewModels.ProductViewModels.ProductOptionViewModel
 
+
+
+
+@{
+    ViewData["Title"] = Localizer["add_attribute"];
+}
+
 <div class="row">
     <div class="col-lg-12">
         <div class="card card-outline-info">
             <div class="card-header">
-                <h4 class="m-b-0 text-white">Add Attribute</h4>
+                <h4 class="m-b-0 text-white">@Localizer["add_attribute"]</h4>
             </div>
             <div class="card-body">
                 <form asp-action="Create" role="form">
@@ -13,20 +20,20 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="Name"></label>
+                                    <JTranslateLabel asp-for="Name"></JTranslateLabel>
                                     <input asp-for="Name" class="form-control" />
                                     <span asp-validation-for="Name"></span>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label asp-for="IsPublish"></label>
+                                    <JTranslateLabel asp-for="IsPublish"></JTranslateLabel>
                                     <input asp-for="IsPublish" class="checkbox" checked="checked" />
                                     <span asp-validation-for="IsPublish"></span>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <div class="row button-group">
@@ -45,7 +52,7 @@
         </div>
     </div>
 </div>
-@section Scripts 
+@section Scripts
 {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

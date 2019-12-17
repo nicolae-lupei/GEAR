@@ -870,5 +870,22 @@
   "create_category": "Δημιουργία κατηγορίας",
   "list_group_attributes": "Λίστα με τα χαρακτηριστικά της ομάδας",
   "edit_attribute_group": "Επεξεργαστείτε το χαρακτηριστικό ομάδα",
-  "add_attribute_group": "Προσθέστε το χαρακτηριστικό ομάδα"
+  "add_attribute_group": "Προσθέστε το χαρακτηριστικό ομάδα",
+  "attribute_group_name": "Χαρακτηριστικό όνομα της ομάδας",
+  "list_product_attributes": "Λίστα με τα Χαρακτηριστικά του Προϊόντος",
+  "add_product_attribute": "Προσθέστε νέο χαρακτηριστικό προϊόντος",
+  "new_attribute_added": "Το νέο χαρακτηριστικό θα προστεθούν",
+  "edit_product_attribute": "Επεξεργαστείτε τις ιδιότητες προϊόντων",
+  "create_product_attribute": "Δημιουργία ιδιότητες προϊόντων",
+  "add_new_type": "Προσθήκη νέου τύπου",
+  "new_type_added": "Το νέο είδος θα πρέπει να προστεθεί",
+  "edit_product_types": "Επεξεργασία τύπων προϊόντων",
+  "add_product_type": "Προσθέστε το προϊόν τύπος",
+  "product_option": "Επιλογή Προϊόντος",
+  "add_new_product_option": "Προσθήκη νέων προϊόντων επιλογή",
+  "new_option_added": "Νέα επιλογή θα προστεθεί",
+  "edit_option": "Επιλογή επεξεργασία",
+  "add_attribute": "Προσθέστε το χαρακτηριστικό",
+  "list_product_option": "Λίστα Προϊόντων Επιλογή",
+  "system_document_category": "Κατηγορία εγγράφου"
 }

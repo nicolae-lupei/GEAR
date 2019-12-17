@@ -870,5 +870,22 @@
   "create_category": "Creați categorie",
   "list_group_attributes": "Lista de grupuri pentru atribute",
   "edit_attribute_group": "Editare atribut grup",
-  "add_attribute_group": "Adăugați atribut grup"
+  "add_attribute_group": "Adăugați atribut grup",
+  "attribute_group_name": "Atribut nume de grup",
+  "list_product_attributes": "Lista de Atribute pentru Produs",
+  "add_product_attribute": "Adaugă nou atribut",
+  "new_attribute_added": "Atribut nou va fi adăugat",
+  "edit_product_attribute": "Editare atribut pentru produs",
+  "create_product_attribute": "Creare atribut pentru produs",
+  "add_new_type": "Adaugă nou tip",
+  "new_type_added": "Tipul  nou va fi adăugat",
+  "edit_product_types": "Editare  tip de produse",
+  "add_product_type": "Adăugați tip de produs",
+  "product_option": "Opțiune de Produs",
+  "add_new_product_option": "Adăugați o opțiunea  nouă",
+  "new_option_added": "Noua optiune va fi adăugat",
+  "edit_option": "Editare opțiune",
+  "add_attribute": "Adăugați atribut",
+  "list_product_option": "Lista de opțiuni pentru produse",
+  "system_document_category": "Categorie de dcoumente"
 }

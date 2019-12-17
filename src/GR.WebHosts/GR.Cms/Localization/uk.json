@@ -870,5 +870,22 @@
   "create_category": "Створити Категорію",
   "list_group_attributes": "Список груп атрибутів",
   "edit_attribute_group": "Редагування групи атрибутів ",
-  "add_attribute_group": "Додати групу атрибутів "
+  "add_attribute_group": "Додати групу атрибутів ",
+  "attribute_group_name": "Атрибут ім'я групи ",
+  "list_product_attributes": "Список атрибутів продукту ",
+  "add_product_attribute": "Додати новий атрибут товару ",
+  "new_attribute_added": "Новий атрибут буде доданий",
+  "edit_product_attribute": "Редагування атрибутів товару ",
+  "create_product_attribute": "Створення атрибутів товару ",
+  "add_new_type": "Додати новий тип",
+  "new_type_added": "Новий тип буде доданий",
+  "edit_product_types": "Редагування видів продукції ",
+  "add_product_type": "Додати тип продукту ",
+  "product_option": "Параметр Продукту ",
+  "add_new_product_option": "Додати новий параметр продукту ",
+  "new_option_added": "Нова опція буде додано",
+  "edit_option": "Опція редагування ",
+  "add_attribute": "Додати атрибут",
+  "list_product_option": "Список параметр продукту ",
+  "system_document_category": "Категорія документ "
 }

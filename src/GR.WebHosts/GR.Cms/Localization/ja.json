@@ -870,5 +870,22 @@
   "create_category": "作成カテゴリ",
   "list_group_attributes": "リストのグループ属性",
   "edit_attribute_group": "編集グループ属性",
-  "add_attribute_group": "追加の属性グループ"
+  "add_attribute_group": "追加の属性グループ",
+  "attribute_group_name": "属性グループ名",
+  "list_product_attributes": "リスト製品の属性",
+  "add_product_attribute": "新規製品の属性",
+  "new_attribute_added": "新しい属性を追加",
+  "edit_product_attribute": "編集製品の属性",
+  "create_product_attribute": "作成製品の属性",
+  "add_new_type": "新しいタイプ",
+  "new_type_added": "新タイプ追加",
+  "edit_product_types": "編集製品の種類",
+  "add_product_type": "追加製品のタイプ",
+  "product_option": "商品オプション",
+  "add_new_product_option": "新規追加商品オプション",
+  "new_option_added": "新しいオプションに追加する",
+  "edit_option": "編集オプション",
+  "add_attribute": "属性の追加",
+  "list_product_option": "リストの商品オプション",
+  "system_document_category": "文書分類"
 }

@@ -870,5 +870,22 @@
   "create_category": "创建类别",
   "list_group_attributes": "列表团属性",
   "edit_attribute_group": "编辑属性的小组",
-  "add_attribute_group": "添加的属性组"
+  "add_attribute_group": "添加的属性组",
+  "attribute_group_name": "属性小组的名字",
+  "list_product_attributes": "列的产品属性",
+  "add_product_attribute": "添加新产品属性",
+  "new_attribute_added": "新的特性将能加入",
+  "edit_product_attribute": "编辑的产品属性",
+  "create_product_attribute": "创建产品属性",
+  "add_new_type": "添加新的类型",
+  "new_type_added": "新类型将增加",
+  "edit_product_types": "编辑的产品类型",
+  "add_product_type": "增加产品的类型",
+  "product_option": "产品的选择",
+  "add_new_product_option": "添加新的产品的选择",
+  "new_option_added": "新的选项将被添加",
+  "edit_option": "编辑的选择",
+  "add_attribute": "添加的属性",
+  "list_product_option": "列表中的产品的选择",
+  "system_document_category": "文件的类别"
 }

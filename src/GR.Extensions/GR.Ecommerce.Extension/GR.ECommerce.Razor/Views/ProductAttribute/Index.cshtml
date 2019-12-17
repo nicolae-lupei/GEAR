@@ -1,8 +1,11 @@
 ﻿@{
+
+    ViewData["Title"] = Localizer["product_attributes"];
+
     var conf = new ListTagHelperModel
     {
-        Title = "Product Attributes",
-        SubTitle = "List of Product Attributes",
+        Title = Localizer["product_attributes"],
+        SubTitle = Localizer["list_product_attributes"],
         ListIdentifier = "product_attribute",
         Api = new ListApiConfigurationViewModel
         {
@@ -11,8 +14,8 @@
         RenderColumns = new List<ListRenderColumn>
         {
             new ListRenderColumn(Localizer["name"], "name"),
-            new ListRenderColumn("Display Name", "displayName"), 
-            new ListRenderColumn("Attribute Group Name", "attributeGroupName"), 
+            new ListRenderColumn(Localizer["display_name"], "displayName"),
+            new ListRenderColumn(Localizer["attribute_group_name"], "attributeGroupName"),
             new ListRenderColumn(Localizer["created"], "created"),
             new ListRenderColumn(Localizer["changed"], "changed"),
             new ListRenderColumn(Localizer["author"], "author"),
@@ -24,8 +27,8 @@
             {
                 AspAction = "Create",
                 AspController = "ProductAttribute",
-                ButtonName = "Add new product attribute",
-                Description = "New attribute will be added"
+                ButtonName = Localizer["add_product_attribute"],
+                Description = Localizer["new_attribute_added"]
             }
         },
         HasActions = true,
@@ -55,7 +58,7 @@
                 ButtonType = BootstrapButton.Danger
             },
         },
-        Documentation = "This tab allow to manage your product attributes"
+        // Documentation = "This tab allow to manage your product attributes"
     };
 }
 
